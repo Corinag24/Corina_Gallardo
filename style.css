@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    height: auto;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.navbar-brand img {
+    height: 44px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 5px 10px;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.carousel {
+    margin-top: 100px;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    .course-card {
+        margin-bottom: 20px;
+    }
+
+    .course-img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .course-card .card-body {
+        padding: 1rem;
+    }
+
+    .course-card .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .featured-programs .row .col-md-4 {
+        margin-bottom: 1rem;
+    }
+
+    .cta .btn {
+        font-size: 1rem;
+    }
+}

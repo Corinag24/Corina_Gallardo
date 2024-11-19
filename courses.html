@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .navbar-nav .nav-link {
+    color: white !important; /* Change text color to white */
+        }
+        header {
+            background-color: #3b8632;
+            padding: 10px 20px;
+            color: #fffbfb;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Main Content Styling */
+        .content {
+            flex: 3; /* Takes up 3 parts of available space */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .course-card {
+            display: flex;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            overflow: hidden;
+        }
+        .course-card img {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+        }
+        .course-card-content {
+            padding: 15px;
+            flex: 1;
+        }
+        .course-card h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .course-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .course-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #3b8632;
+            color: #fff9f9;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .course-card a:hover {
+            background-color: #3b8632;
+        }
+        /* Sidebar Styling */
+        .sidebar {
+            flex: 1; /* Takes up 1 part of available space */
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+/* Extra mobile responsiveness */
+@media (max-width: 576px) {
+            .main-layout {
+                flex-direction: column; /* Stack items vertically */
+                padding: 10px;
+            }
+            .content, .sidebar {
+                width: 100%; /* Make content and sidebar full width */
+            }
+            .navbar-nav {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="4.png" alt="Logo" width="50" height="50" class="mr-2">
+            ILOCOS SUR COMMUNITY COLLEGE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admissions</a></li>
+                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>Courses</header>
+    <div class="main-layout">
+        <!-- Main Content -->
+        <div class="content">
+            <div class="container">
+                <div class="course-card">
+                    <img src="hm.png" alt="HM">
+                    <div class="course-card-content">
+                        <h3>Bachelor Of Science in Hospitality Management</h3>
+                        <p>Focuses on hospitality operations, customer service, and tourism management.</p>
+                        <a href="hm details.html">Details</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="it.png" alt="I.T">
+                    <div class="course-card-content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p>Specialized in Network Administration, this course equips students with the knowledge and skills to manage and maintain computer networks.</p>
+                        <a href="it details.html">Details</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="agri.png" alt="Agriculture">
+                    <div class="course-card-content">
+                        <h3>Bachelor Of Science in Agriculture</h3>
+                        <p>Study of farming, crop and livestock management, and sustainable food production.</p>
+                        <a href="agri details.html">Details</a>
+                    </div>
+                </div>
+ <div class="course-card">
+            <img src="midwifery.png" alt="Midwifery">
+            <div class="course-card-content">
+                <h3>Bachelor Of Science in Midwifery</h3>
+                <p>Training in maternal and infant healthcare, from prenatal to postpartum support.</p>
+                <a href="midwifery details.html">Details</a>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="tourism.jpg" alt="Tourism">
+            <div class="course-card-content">
+                <h3>Bachelor Of Science in Tourism Management</h3>
+                <p>Prepares for roles in travel, tourism promotion, and sustainable destination management.</p>
+                <a href="tourism detail.html">Details</a>
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="coop.jpg" alt="Cooperative Management">
+            <div class="course-card-content">
+                <h3>Bachelor Of Science in Cooperative Management</h3>
+                <p>Focus on managing cooperatives, community resources, and member-based organizations.</p>
+                <a href="coop details.html">Details</a>
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h4>Offer Courses</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/isccinfotech">Bachelor Of Science in Information Technology</a></li>
+                <li><a href="https://www.facebook.com/isccheso">Bachelor Of Science in Midwifery</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100085466255381">Bachelor Of Science in Tourism Management</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100085717115289">Bachelor Of Science in Cooperative Management</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61551545154316">Bachelor Of Science in Hospitality Management</a></li>
+                <li><a href="https://www.facebook.com/p/iscc-agribusiness-department-100069357252480/">Bachelor Of Science in Agriculture</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
