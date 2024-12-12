@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #28a745; /* Green background for header */
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .mission, .vision, .values {
+            margin-bottom: 2rem;
+        }
+        .mission h2, .vision h2, .values h2 {
+            color: #249c24; /* Green color */
+        }
+        /* Green color for About ISCC */
+        .about h2 {
+            color: #28a745;
+        }
+
+        /* Flexbox Layout for About Section */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        /* Adjust the image and text within the about section */
+        .about .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about img {
+            width: 20%;
+            height: fit-content;
+            border-radius: 8px; /* Optional for a rounded effect */
+        }
+
+        footer {
+            background-color: #249c24;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            /* Navbar adjustments for mobile */
+            .navbar-toggler {
+                margin-left: auto;
+            }
+
+            /* Stack the About section content vertically on small screens */
+            .about {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about img {
+                width: 80%;
+                margin-top: 20px;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            /* Adjust the padding and margins for smaller screens */
+            footer {
+                position: relative;
+                bottom: auto;
+                margin-top: 2rem;
+            }
+
+            /* Styling for mobile header */
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            /* Adjust margins for smaller screen devices */
+            .mission, .vision, .values {
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Smaller screen font sizes */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .about img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+        <a class="navbar-brand d-flex align-items-center text-white" href="#">
+            <img src="image/logo.png" alt="Logo" width="50" height="50" class="mr-2">
+            ILOCOS SUR COMMUNITY COLLEGE
+        </a>   
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admissions</a></li>
+                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav><br>
+    <br>
+
+    <div class="container">
+        <section class="about">
+            <div class="text">
+                <h2>About ISCC</h2>
+                <p>The college is one whose program is designed for useful and effective learning and aims to improve the quality of living in the Community. It offers practical courses to serve the educational needs of deserving but indigent students. It is designated for the young people of Ilocos Sur and its surrounding areas, there being no barrier for admission by reason of age, sex, nationality, religious belief, or political affiliation. It provides low-cost education as part of the Provincial Government's program of social amelioration.</p>
+            </div>
+            <img src="image/logo.png" alt="ISCC">
+        </section>        
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To develop and empower the Ilocano youth to become change-agents through the provision of quality and accessible education and the provision of equitable services to develop sustainable communities, establish linkages, and enhance institutional development.</p>
+        </section>
+
+        <section class="vision">
+            <h2>Our Vision</h2>
+            <p>By the year 2030, ISCC will be a global catalyst for social change through excellence in instruction, research, extension, and production, anchored in Filipino spirit and Ilocano heart.</p>
+        </section>
+
+        <section class="values">
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Integrity:</strong> We promote honesty and strong ethical standards in everything we do.</li>
+                <li><strong>Respect:</strong> We believe in respecting the dignity and worth of every individual.</li>
+                <li><strong>Excellence:</strong> We aim to achieve the highest standards in academics and character development.</li>
+                <li><strong>Community:</strong> We foster a sense of belonging and collaboration among students, staff, and parents.</li>
+                <li><strong>Innovation:</strong> We encourage creative thinking and embrace new methods to enhance learning.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ilocos Sur Community College | All rights reserved.</p>
+    </footer>
+
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </body>
+   
+</body>
+</html>

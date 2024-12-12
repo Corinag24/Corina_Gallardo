@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<style>
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #004400;
+}
+/* Cards for events */
+.card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004400;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card p strong {
+    color: #004400;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+        <a class="navbar-brand d-flex align-items-center text-white" href="#">
+            <img src="image/logo.png" alt="Logo" width="50" height="50" class="mr-2">
+            ILOCOS SUR COMMUNITY COLLEGE
+        </a>    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admissions</a></li>
+                <li class="nav-item"><a class="nav-link" href="program.html">Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Events Section -->
+<style>
+    .custom-card-container {
+        max-width: 400px; /* Adjust width as needed */
+        margin: 0 auto; /* Center align the card */
+    }
+</style>
+<div class="container mt-5 pt-5">
+    <h1 class="text-center">Events</h1>
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-5 custom-card-container">
+            <div class="card mb-4">
+                <img src="image/event3.jpg" class="card-img-top" alt="Event 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">90th National Book Week Celebration</h5>
+                    <p class="card-text">Celebrates the love for reading and the importance of books in education and culture through activities like book fairs, storytelling, and literary contests.</p>
+                    <p><strong>Date:</strong>November 26, 2024</p>
+                    <p><strong>Venue:</strong> Ilocos Sur Community College</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 custom-card-container">
+            <div class="card mb-4">
+                <img src="image/event1.jpg" class="card-img-top" alt="Event 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Bloodletting Event</h5>
+                    <p class="card-text">Join us for a life-saving. Be a hero in someone's story. Your donation can save lives and make a lasting impact in our community.</p>
+                    <p><strong>Date:</strong> December 05, 2024</p>
+                    <p><strong>Venue:</strong> Caregiving lab, Old Admin Bldg.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 custom-card-container">
+            <div class="card mb-4">
+                <img src="image/event2.jpg" class="card-img-top" alt="Event 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Enrollment for 2nd Semester</h5>
+                    <p class="card-text">Process of officially registering or signing up for participation in a program, course, or institution.</p>
+                    <p><strong>Venue:</strong> Ilocos Sur Community College</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Include Bootstrap JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
